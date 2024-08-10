@@ -40,8 +40,8 @@
         </ul>
     </nav>
     {{-- Side Menu Container Open --}}
-    <div id="menu_left_side" class="menu_left_side flex flex-column items-start justify-center transition-all duration-600 relative bottom-8 right-full md:bottom-10 w-1/2 bg-white md:w-96 border border-gray-900 min-h-full p-2">
-        <span id="close" class="text-sm w-5 h-5 p-2 absolute md:right-10 left-10 top-3 flex justify-center items-center cursor-pointer hover:scale-105 transition ease-in"><i class="ri-arrow-left-wide-line text-2xl md:text-3xl text-gray-800"></i></span>
+    <div id="menu_left_side" class="menu_left_side flex flex-column items-start justify-center transition-all duration-600 relative bottom-8 right-full md:bottom-10 w-1/2 bg-white md:w-96 border border-gray-900 min-h-screen pt-5">
+        <span id="close" class="text-sm w-5 h-5 p-2 absolute md:right-10 left-5 top-3 flex justify-center items-center cursor-pointer hover:scale-105 transition ease-in"><i class="ri-arrow-left-wide-line text-2xl md:text-3xl text-gray-800"></i></span>
         <ul class="side_bar-menu mt-3 flex flex-col justify-center items-center font-bold text-sm md:text-md">
             <li class="p-2 hover:underline" ><a href="">Our Mission</a></li>
             <li class="p-2 hover:bg-red-600 bg-red-500 text-white font-bold hover:underline rounded m-2 text-center min-w-full" ><a href="">Become Volunteer  <i class="ri-hand"></i></a></li>

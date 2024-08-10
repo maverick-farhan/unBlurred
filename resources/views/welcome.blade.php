@@ -14,7 +14,7 @@
 <body class="font-open bg-gray-100">
     <header id="top-logo-reserved" class="bg-zinc-900 top-logo-reserved w-full flex relative justify-center  h-10 md:h-12 items-center">
         <div class="font-wrap latest-announcements font-open uppercase text-xs font-bold text-white"><i class="quotes text-xl">“</i> Say the truth even if it may be bitter. <i class="quotes text-xl">”</i></div>
-        <span id="close" class="text-sm w-5 h-5 p-2 rounded-full absolute md:right-12 right-6 bg-gray-100 transition-all flex justify-center items-center cursor-pointer hover:bg-red-600"><i class="ri-close-line"></i></span>
+        <span id="close" class="text-sm w-5 h-5 p-2 rounded-full absolute md:right-12 right-6 bg-gray-100 transition-all flex justify-center items-center cursor-pointer hover:bg-red-600"><i class="ri-close-line"></i></span> 
     </header>
 
     <nav class="only-logo-center mt-2 flex md:flex-row justify-center p-2 items-center">
@@ -30,7 +30,7 @@
     <nav class="navbar-menu px-8 md:px-12">
         <ul class="navbar-parent w-full flex justify-between items-center">
             <div class="left xs:w-3/4">
-                <li><i id="menu_bar_icon" class="menu_bar_icon text-2xl md:text-3xl text-gray-800 cursor-pointer ri-menu-line"></i></li>
+                <li><i id="menu_bar_icon" class="menu_bar_icon text-2xl md:text-3xl text-gray-800 cursor-pointer ri-arrow-right-wide-line"></i></li>
             </div>
             <div class="right flex justify-between items-center md:w-40 xs:w-3/4">
                 <li><a href="#"><i class="text-gray-800 ri-vidicon-line md:text-2xl text-xl mx-2"></i></a></li>
@@ -41,13 +41,13 @@
     </nav>
     {{-- Side Menu Container Open --}}
     <div id="menu_left_side" class="menu_left_side flex flex-column items-start justify-center transition-all duration-600 relative bottom-8 right-full md:bottom-10 w-1/2 bg-white md:w-96 border border-gray-900 min-h-full p-2">
-        <span id="close" class="hover:rotate-90 text-sm w-5 h-5 p-2 absolute md:right-12 left-12 top-3 flex justify-center items-center cursor-pointer hover:scale-125 transition ease-in"><i class="ri-close-line text-3xl text-gray-800"></i></span>
-        <ul class="side_bar-menu mt-12 flex flex-col justify-center items-center font-bold text-sm md:text-md">
-            <li class="p-2 m-2 hover:underline" ><a href="">Our Mission</a></li>
+        <span id="close" class="text-sm w-5 h-5 p-2 absolute md:right-10 left-10 top-3 flex justify-center items-center cursor-pointer hover:scale-105 transition ease-in"><i class="ri-arrow-left-wide-line text-2xl md:text-3xl text-gray-800"></i></span>
+        <ul class="side_bar-menu mt-3 flex flex-col justify-center items-center font-bold text-sm md:text-md">
+            <li class="p-2 hover:underline" ><a href="">Our Mission</a></li>
             <li class="p-2 hover:bg-red-600 bg-red-500 text-white font-bold hover:underline rounded m-2 text-center min-w-full" ><a href="">Become Volunteer  <i class="ri-hand"></i></a></li>
             <li class="p-2 hover:bg-red-600 bg-red-500 text-white font-bold hover:underline rounded m-2 min-w-full text-center" ><a href="">Become Reader <i class="ri-glasses-line"></i></a></li>
-            <li class="p-2 m-2 hover:underline" ><a href="">Privacy Policy</a></li>
-            <li class="p-2 m-2 hover:underline" ><a href="">Terms &amp; Conditions</a></li>
+            <li class="p-2 hover:underline" ><a href="">Privacy Policy</a></li>
+            <li class="p-2 hover:underline" ><a href="">Terms &amp; Conditions</a></li>
         </ul>
     </div>
     {{-- Side Menu Container Closed --}}

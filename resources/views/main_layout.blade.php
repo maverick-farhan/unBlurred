@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +11,12 @@
     rel="stylesheet"
 />
 </head>
-<body class="font-open bg-gray-100">
+
+<body class=" font-open bg-gray-100">
+
     <header id="top-logo-reserved" class="bg-zinc-900 top-logo-reserved w-full flex relative justify-center  h-10 md:h-12 items-center">
         <div class="font-wrap latest-announcements font-open uppercase text-xs font-bold text-white"><i class="quotes text-xl">“</i> Say the truth even if it may be bitter. <i class="quotes text-xl">”</i></div>
-        <span id="close" class="text-sm w-5 h-5 p-2 rounded-full absolute md:right-12 right-6 bg-gray-100 transition-all flex justify-center items-center cursor-pointer hover:bg-red-600"><i class="ri-close-line"></i></span> 
+        <span id="close" class="text-sm w-5 h-5 p-2 rounded-full absolute md:right-12 right-6 bg-gray-100 transition-all flex justify-center items-center cursor-pointer hover:bg-red-600"><i class="ri-close-line"></i></span>
     </header>
 
     <nav class="only-logo-center mt-2 flex md:flex-row justify-center p-2 items-center">
@@ -37,88 +39,22 @@
             </div>
             <div class="right flex justify-between items-center md:w-40 xs:w-3/4">
                 <li><a href="#"><i class="text-gray-800 ri-vidicon-line md:text-2xl text-xl mx-2"></i></a></li>
-                <li><a href="#"><i class="text-gray-800 ri-notification-3-line text-xl md:text-2xl mx-2"></i></a></li>
-                <li><a href="#"><i class="text-gray-800 ri-settings-5-line text-xl md:text-2xl mx-2"></i></a></li>
+                <li class="before:block before:absolute before:w-2 before:left-4 before:ml-1 before:h-2 before:rounded-full before:-skew-y-0 before:bg-red-500 relative inline-block z-0"><a href="#"><i class="z-10 text-gray-800 ri-notification-3-line text-xl md:text-2xl mx-2"></i></a></li>
+                <li><a href="#"><i class="inline-block text-gray-800 transition-all hover:rotate-45 ease-in duration-600 ri-settings-5-line text-xl md:text-2xl mx-2"></i></a></li>
             </div>
         </ul>
     </nav>
     {{-- Main Menu Bar --}}
 
-    {{-- Filter DIV and Search OPEN--}}
-    <div class="filter-search items-center flex justify-between md:px-14 px-10 sm:w-full z-50  h-8 mt-4">
-        <div class="filter">
-            <form class="max-w-full flex bg-gray-50 border-red-500 text-gray-900 border rounded px-2 py-1">
-                <i class="ri-filter-3-line font-bold"></i>
-                <select id="countries" class="font-bold cursor-pointer bg-transparent outline-0  text-sm  focus:ring-red-500 focus:border-red-500 block w-full  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
-                    <option selected>Filters</option>
-                    <option value="newest">Newest</option>
-                    <option value="oldest">Oldest</option>
-                    <option value="voted">Most Voted</option>
-                </select>
-              </form>
-        </div>
-        <div class="search">
-            <form action="" action="get">
-                <input class="bg-slate-200 outline-1 py-1 rounded px-2 w-36 md:w-96 border-b border-red-500 bg-transparent" type="text" name="keyword" />
-                <button type="submit"><i class="text-lg md:text-2xl ri-search-line"></i></button>
-            </form>
-        </div>
-    </div>
-    {{-- Filter DIV and Search END--}}
-
-    {{-- News View Open--}}
-    <div class="container overflow-scroll h-auto w-full">
-        <div class="news-container border border-black w-11/12 h-28 md:w-3/4 rounded-lg mx-auto mt-5 px-2 flex justify-between items-center md:h-40">
-            <div class="left-wrapper md:w-3/4 w-4/6 px-3 flex flex-col justify-between h-full py-5">
-                <div class="heading">
-                    <h1 class="title font-bold text-lg uppercase text-wrap">Now that Spotlight Of Corruption Is On BJP, Modi Has Turned to a Dangerous Narrative</h1>
-                    <h5 class="author text-xs uppercase font-bold text-gray-800">Volunteer - <a href="#" class="volunteer-profile uppercase hover:underline"> Aston Martin <i class="ri-verified-badge-line text-yellow-600"></i></a></h5>
-                </div>
-                <div class="cta">
-                    <button class="read bg-zinc-900 hover:bg-zinc-100 outline-double transition-all hover:text-black px-2 py-1 rounded cursor-pointer font-bold text-gray-100">Seek Truth</button>
-
-                    {{-- THis like button should be a form --}}
-                    <button class="likes mx-3"><i class="ri-heart-line"></i> 120</button>
-                    {{-- THis like button should be a form --}}
-                </div>
-            </div>
-
-            <div class="right-wrapper flex flex-col justify-around items-start h-full py-2">
-                <div class="reference">
-                   <a class="uppercase font-bold text-2xl" href="#"><h1>References<i class="ri-link"></i></h1></a> 
-                </div>
-                <div class="polls">
-                   <a href="#" class="uppercase font-bold text-2xl"><h1>Poll Scale <i class="ri-scales-3-line"></i></h1></a> 
-                </div>
-            </div>
-        </div>
-
-        <div class="news-container border border-black w-11/12 h-28 md:w-3/4 rounded-lg mx-auto mt-5 flex justify-between items-center md:h-40">
-            <div class="left-wrapper">
-
-            </div>
-
-            <div class="right-wrapper"></div>
-        </div>
-
-        <div class="news-container border border-black w-11/12 h-28 md:w-3/4 rounded-lg mx-auto mt-5 flex justify-between items-center md:h-40">
-            <div class="left-wrapper">
-
-            </div>
-
-            <div class="right-wrapper"></div>
-        </div>
-    </div>
-
-    {{-- News View Closed--}}
+    @yield('dynamic')
 
     {{-- Side Menu Container Open --}}
-    <div id="menu_left_side" class="menu_left_side flex flex-column items-start justify-center transition-all duration-600 relative bottom-8 right-full md:bottom-10 w-1/2 bg-white md:w-96 border border-gray-900 min-h-screen pt-5">
-        <span id="close" class="text-sm w-5 h-5 p-2 absolute md:right-10 sm:left-4 left-2 top-3 flex justify-center items-center cursor-pointer hover:scale-105 transition ease-in"><i class="ri-close-line text-2xl md:text-3xl text-gray-800"></i></span>
-        <ul class="side_bar-menu mt-12 flex flex-col justify-center items-center font-bold text-sm md:text-md">
+    <div id="menu_left_side" class="menu_left_side flex items-start justify-center transition-all duration-600 absolute top-32 right-full w-screen bg-white md:w-96 border border-gray-900 min-h-96 pt-5">
+        <span id="close" class="text-sm w-5 h-5 p-2 absolute md:right-10 sm:left-12 left-6 top-3 flex justify-center items-center cursor-pointer hover:scale-105 transition ease-in"><i class="ri-close-line text-2xl md:text-3xl text-gray-800"></i></span>
+        <ul class="side_bar-menu mt-12 flex flex-col justify-center items-center font-bold text-sm md:text-base">
             <li class="p-2 hover:underline" ><a href="">Our Mission</a></li>
-            <li class="p-2 hover:bg-red-600 bg-red-500 text-white font-bold hover:underline rounded m-2 text-center min-w-full" ><a href="">Become Volunteer  <i class="ri-hand"></i></a></li>
-            <li class="p-2 hover:bg-red-600 bg-red-500 text-white font-bold hover:underline rounded m-2 min-w-full text-center" ><a href="">Become Reader <i class="ri-glasses-line"></i></a></li>
+            <li class="p-2 hover:bg-red-700 bg-red-600 text-white font-bold hover:underline rounded m-2 text-center min-w-full" ><a href="">Become Volunteer  <i class="ri-hand"></i></a></li>
+            <li class="p-2 hover:bg-red-700 bg-red-600 text-white font-bold hover:underline rounded m-2 min-w-full text-center" ><a href="">Become Reader <i class="ri-glasses-line"></i></a></li>
             <li class="p-2 hover:underline" ><a href="">Privacy Policy</a></li>
             <li class="p-2 hover:underline" ><a href="">Terms &amp; Conditions</a></li>
         </ul>
@@ -128,3 +64,4 @@
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+

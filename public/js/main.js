@@ -18,7 +18,7 @@ menu_bar_icon.addEventListener("click",(e)=>{
     left_side_menu.style.transition = "all .4s ease-in-out";
 });
 left_side_menu.firstElementChild.addEventListener('click',(e)=>{
-    left_side_menu.style.left = "-100%";
+    left_side_menu.style.left = "-40rem";
     left_side_menu.style.transition = "all .4s linear";
 })
 

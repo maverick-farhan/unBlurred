@@ -2,10 +2,10 @@
 @section('dynamic')
 
     {{-- Filter DIV and Search OPEN--}}
-    <div class="filter-search items-center flex-col md:flex-row flex justify-between md:px-14 px-10 sm:w-full z-50  h-16 mt-5">
+    <div class="filter-search items-center flex-col md:flex:-row flex justify-between md:px-14 px-10 sm:w-full z-50  h-12 mt-5">
         <div class="filter flex items-center relative md:right-0 right-3">
             <h1 class="filter-text mr-2 text-sm md:text-md font-bold"><i class="ri-filter-3-line pr-1"></i>Filter</h1>
-            <form class="max-w-full flex text-gray-900 border rounded px-2 py-1" action="{{ route('filter') }}" method="GET">
+            <form class="max-w-full flex text-gray-900 border rounded px-2 py-1" action="{{ route('filter') }}" method='GET' >
                 @csrf
                 <button class="mx-3 text-green-700 hover:underline text-sm md:text-base" type="submit" name="newest" value="1">Most Recent</button>
                 <button class="mx-3 text-red-700 hover:underline text-sm md:text-base" type="submit" name="oldest" value="0">Oldest</button>
@@ -15,19 +15,18 @@
             <form action="{{ route('search') }}" action="get">
                 @csrf
                 <input placeholder="Search"class="focus:bg-slate-200 transition-all outline-1 py-0 md:py-1 font-condensed font-bold text-lg rounded px-2 w-48 md:w-96 border-b border-red-500 bg-transparent" type="search" name="search" />
-                <button type="submit" class="hover:bg-red-600 hover:text-white transition-all rounded-full" ><i class="text-md md:text-xl px-1 ri-search-line"></i></button>
+                <button type="submit" class="hover:bg-red-600 hover:text-white transition-all rounded-full" ><i class="text-md md:text-2xl px-2 ri-search-line"></i></button>
             </form>
         </div>
     </div>
     {{-- Filter DIV and Search END--}}
 
     {{-- News View Open--}}
-<div class="parent-center flex justify-center flex-col items-center">
 
     @foreach ($posts as $post)
     @if($post)
     <div class="container h-auto w-full">
-        <div class="news-container border border-slate-600 w-11/12 h-auto md:w-11/12 rounded-md mx-auto mt-5 px-2 flex justify-between md:items-center items-start md:h-44">
+        <div class="news-container border border-slate-600 w-11/12 h-60 md:w-11/12 rounded-md mx-auto mt-5 px-2 flex justify-between md:items-center items-start md:h-44">
             <div class="left-wrapper md:w-3/4 w-4/6 px-3 flex flex-col justify-between h-full py-5">
                 <div class="heading">
                     <a href="{{ route('read-post',$post->id) }}" class="post hover:underline">
@@ -60,6 +59,5 @@
     </div>
     @endif
     @endforeach
-</div>
     <div class="flex justify-evenly items-center mt-4">{{ $posts->links() }}</div>
 @endsection
